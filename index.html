@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/myach-dlya-futbola-transformed.webp"
+      type="image/x-icon"
+    />
+    <title>Футбольчик</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="/"><p class="logo">Футбольчик</p></a>
+        <nav class="main-nav">
+          <a href="#">Главная</a>
+          <a href="#">Внутренняя про игру</a>
+          <a href="#">Контакты</a>
+        </nav>
+        <button class="btn">Кнопка</button>
+        <button
+          type="button"
+          class="mobile-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-btn-icon" width="40" height="40">
+            <use href="./img/sprite.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="40" height="40">
+              <use href="./img/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <a href="#">Главная</a>
+            <a href="#">Внутренняя про игру</a>
+            <a href="#">Контакты</a>
+          </nav>
+          <button class="button">Кнопка</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-left-side">
+            <h1 class="title">Любишь футбол?</h1>
+            <p class="subtitle">Получи мяч на первую игру</p>
+            <button class="btn">Получить мяч</button>
+          </div>
+
+          <div class="hero-right-side">
+            <!-- <img src="./img/football-goal.png" alt="football goal" /> -->
+            <img
+              class="hero-img"
+              src="./img/stadium-football.png"
+              alt="football goal"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="slider container swiper">
+        <h2 class="title">Начни игру с выбора мяча</h2>
+        <p class="descr">
+          Любой спорт с чего-то начинается. Мы предлагаем ознакомиться с
+          ассортиментом наших фирменных игровых мячей и выбрать свой. Ворвись в
+          игру с максимальным преимуществом и обойди всех соперников с бонусами
+          и отличным настроением.
+        </p>
+
+        <div class="slider-wrapper swiper-wrapper">
+          <div class="slider-item swiper-slide">
+            <img
+              src="./img/ball-1-removebg-preview.png"
+              alt="ball-1"
+              width="100px"
+            />
+            <div class="slide-descr">
+              <h3>Гигамяч</h3>
+              <p>отличный выбор для новичка</p>
+            </div>
+          </div>
+
+          <div class="slider-item swiper-slide">
+            <img
+              src="./img/ball-2-transformed.webp"
+              alt="ball-2"
+              width="100px"
+            />
+            <div class="slide-descr">
+              <h3>Турбомяч</h3>
+              <p>для тех кто любит скорость</p>
+            </div>
+          </div>
+
+          <div class="slider-item swiper-slide">
+            <img
+              src="./img/ball-9-transformed.png"
+              alt="ball-3"
+              width="100px"
+            />
+            <div class="slide-descr">
+              <h3>Мудромяч</h3>
+              <p>хитрый игрок оценит</p>
+            </div>
+          </div>
+
+          <div class="slider-item swiper-slide">
+            <img
+              src="./img/ball-1-removebg-preview.png"
+              alt="ball-1"
+              width="100px"
+            />
+            <div class="slide-descr">
+              <h3>Гигамяч</h3>
+              <p>отличный выбор для новичка</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-pagination-dots"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2024. Oleksandr Pik</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
