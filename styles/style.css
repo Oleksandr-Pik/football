@@ -19,8 +19,6 @@ body {
   font-size: 18px;
   line-height: 1;
   color: #292929;
-
-  /* background-color: #929292; */
 }
 
 a {
@@ -144,8 +142,6 @@ a {
   display: flex;
   gap: 30px;
   flex-direction: column;
-  /* margin: o auto; */
-  /* justify-content: center; */
   padding-top: 100px;
   padding-left: 30px;
   margin-bottom: 70px;
@@ -159,7 +155,6 @@ a {
 
 .button {
   color: inherit;
-
   padding: 10px 25px;
   border-radius: 30px;
   border: 1px solid var(--c-accent);
@@ -178,13 +173,6 @@ a {
 
 
 /* HERO ================= */
-.hero {
-  /* background-image: linear-gradient(rgb(13, 66, 4), */
-  /* rgba(0, 78, 9, 0.409)); */
-  /* background-color: var(--c-bg-secondary); */
-
-}
-
 .hero .container {
   display: flex;
   padding-right: 0;
@@ -213,22 +201,19 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
 }
 
 .hero-right-side {
   width: 50%;
-  /* height: 60vh; */
   display: flex;
   justify-content: right;
   align-items: flex-start;
-  /* border-radius: 50px; */
   border-bottom-left-radius: 500px;
 
   background-color: var(--c-bg-main);
   background-image: linear-gradient(rgba(18, 40, 27, 0.4),
       rgba(78, 78, 78, 0.4)),
-    url("../img/lawn_640_bg.jpg");
+    url("../img/lawn_640_bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -287,10 +272,6 @@ a {
   background-color: var(--c-bg-secondary);
   transition: var(--animation-transition);
 }
-
-/* .slider-pagination-dot:hover {
-  background-color: var(--c-accent);
-} */
 
 .slider-pagination-dot-active {
   background-color: var(--c-accent);
